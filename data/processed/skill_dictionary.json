@@ -1,0 +1,186 @@
+{
+  "skills": [
+    {
+      "name": "Python",
+      "category": "Programming Languages",
+      "aliases": ["python3", "python 3"],
+      "ambiguous": false
+    },
+    {
+      "name": "Java",
+      "category": "Programming Languages",
+      "aliases": ["java 8", "java 11", "core java"],
+      "ambiguous": false
+    },
+    {
+      "name": "JavaScript",
+      "category": "Programming Languages",
+      "aliases": ["js", "javascript es6", "ecmascript"],
+      "ambiguous": false
+    },
+    {
+      "name": "TypeScript",
+      "category": "Programming Languages",
+      "aliases": ["ts"],
+      "ambiguous": false
+    },
+    {
+      "name": "C",
+      "category": "Programming Languages",
+      "aliases": [],
+      "ambiguous": true,
+      "case_sensitive": true
+    },
+    {
+      "name": "C++",
+      "category": "Programming Languages",
+      "aliases": ["cpp", "c plus plus"],
+      "ambiguous": false
+    },
+    {
+      "name": "C#",
+      "category": "Programming Languages",
+      "aliases": ["c sharp", "csharp"],
+      "ambiguous": false
+    },
+    {
+      "name": "R",
+      "category": "Programming Languages",
+      "aliases": ["r programming"],
+      "ambiguous": true,
+      "case_sensitive": true
+    },
+    {
+      "name": "SQL",
+      "category": "Databases",
+      "aliases": ["structured query language"],
+      "ambiguous": false
+    },
+    {
+      "name": "MySQL",
+      "category": "Databases",
+      "aliases": ["my sql"],
+      "ambiguous": false
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Databases",
+      "aliases": ["postgres", "postgresql"],
+      "ambiguous": false
+    },
+    {
+      "name": "MongoDB",
+      "category": "Databases",
+      "aliases": ["mongo", "mongo db"],
+      "ambiguous": false
+    },
+    {
+      "name": "React",
+      "category": "Web Frameworks",
+      "aliases": ["reactjs", "react.js", "react js"],
+      "ambiguous": false
+    },
+    {
+      "name": "Node.js",
+      "category": "Web Frameworks",
+      "aliases": ["nodejs", "node js", "node"],
+      "ambiguous": false
+    },
+    {
+      "name": "Next.js",
+      "category": "Web Frameworks",
+      "aliases": ["nextjs", "next js", "next. js"],
+      "ambiguous": false
+    },
+    {
+      "name": ".NET",
+      "category": "Frameworks",
+      "aliases": ["dotnet", ".net core", "dot net"],
+      "ambiguous": false
+    },
+    {
+      "name": "ASP.NET",
+      "category": "Frameworks",
+      "aliases": ["asp.net core", "aspnet"],
+      "ambiguous": false
+    },
+    {
+      "name": "CI/CD",
+      "category": "DevOps",
+      "aliases": ["ci cd", "continuous integration", "continuous deployment"],
+      "ambiguous": false
+    },
+    {
+      "name": "GitHub Actions",
+      "category": "DevOps",
+      "aliases": ["github action"],
+      "ambiguous": false
+    },
+    {
+      "name": "AWS",
+      "category": "Cloud",
+      "aliases": ["amazon web services"],
+      "ambiguous": false
+    },
+    {
+      "name": "Microsoft Azure",
+      "category": "Cloud",
+      "aliases": ["azure"],
+      "ambiguous": false
+    },
+    {
+      "name": "scikit-learn",
+      "category": "Libraries",
+      "aliases": ["scikit learn", "sklearn"],
+      "ambiguous": false
+    },
+    {
+      "name": "Machine Learning",
+      "category": "Data Science",
+      "aliases": ["ml"],
+      "ambiguous": false
+    },
+    {
+      "name": "Deep Learning",
+      "category": "Data Science",
+      "aliases": ["dl"],
+      "ambiguous": false
+    },
+    {
+      "name": "Data Science",
+      "category": "Data Science",
+      "aliases": [],
+      "ambiguous": false
+    },
+    {
+      "name": "Natural Language Processing",
+      "category": "Data Science",
+      "aliases": ["nlp"],
+      "ambiguous": false
+    },
+    {
+      "name": "Computer Vision",
+      "category": "Data Science",
+      "aliases": ["cv"],
+      "ambiguous": false
+    },
+    {
+      "name": "Artificial Intelligence",
+      "category": "Data Science",
+      "aliases": ["ai"],
+      "ambiguous": false
+    },
+    {
+      "name": "Internet of Things",
+      "category": "Other Technical Skills",
+      "aliases": ["iot"],
+      "ambiguous": false
+    },
+    {
+      "name": "Spring Boot",
+      "category": "Frameworks",
+      "aliases": ["springboot", "spring-boot", "spring"],
+      "ambiguous": false
+    }
+  ]
+}
