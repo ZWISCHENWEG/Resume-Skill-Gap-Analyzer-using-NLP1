@@ -1,7 +1,15 @@
+import os
+import sys
+from pathlib import Path
+
+# Ensure project root is in sys.path so imports work regardless of launch directory
+ROOT_DIR = str(Path(__file__).resolve().parent.parent)
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+
 import streamlit as st
 import pandas as pd
 import tempfile
-import os
 
 from src.extraction.document_parser import parse_document
 from src.nlp.preprocessing import TextPreprocessor

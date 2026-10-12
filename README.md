@@ -39,7 +39,7 @@ Resume Project/
 │   ├── extraction/            # PDF & DOCX Parsers
 │   ├── nlp/                   # Preprocessing, Skill Extractor, Matching Engine
 │   └── data_analysis/         # Dataset fetching scripts
-├── tests/                     # 62 automated regression tests
+├── tests/                     # 64 automated regression tests
 └── README.md
 ```
 
@@ -50,32 +50,32 @@ The underlying evaluation vocabulary was guided by exploring raw GitHub mirrors 
 *Note: Datasets were fetched cleanly without TOS-violating scraping.*
 
 ## How to Install
-1. Ensure Python 3.14 (or similar 3.x) is installed.
+1. Ensure Python 3.14 (or compatible Python 3.x) is installed.
 2. Create and activate a virtual environment:
    ```bash
-   python -m venv .venv
+   python3 -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    ```
 3. Install dependencies:
    ```bash
-   pip install nltk scikit-learn pymupdf python-docx pandas streamlit pytest
+   pip install -r requirements.txt
    ```
 4. Download necessary NLTK data (handled automatically by the application on first run).
 
 ## How to Run
 To launch the Streamlit Web Application:
 ```bash
-PYTHONPATH=. streamlit run src/app.py
+streamlit run src/app.py
 ```
 Open `http://localhost:8501` in your browser.
 
 To run the automated test suite:
 ```bash
-PYTHONPATH=. pytest tests/ -v
+pytest -v
 ```
 
 ## Evaluation Results
-The system is backed by a robust regression suite consisting of 62 unit tests covering edge cases like empty files, unreadable PDFs, and boundary anomalies.
+The system is backed by a robust regression suite consisting of 64 unit tests covering edge cases like empty files, unreadable PDFs, and boundary anomalies.
 On a manually verified Ground-Truth subset of realistic resume snippets, the **Skill Extraction Engine** achieved:
 - **Precision**: 96%
 - **Recall**: 100%
@@ -83,7 +83,7 @@ On a manually verified Ground-Truth subset of realistic resume snippets, the **S
 
 ## Known Limitations
 - **Lexical, not Semantic**: TF-IDF measures statistical word overlap. It does not possess deep semantic understanding (e.g., it will not inherently link "Machine Learning" to "Predictive Models" unless they share exact tokenized words).
-- **Static Vocabulary**: The skill extraction relies on a curated vocabulary dictionary. Unrecognized niche tools will not be extracted unless added to `canonical_skills.json`.
+- **Static Vocabulary**: The skill extraction relies on a curated vocabulary dictionary. Unrecognized niche tools will not be extracted unless added to `data/processed/skill_dictionary.json`.
 
 ## Future Improvements
 - Expand the technical vocabulary to encompass more domains (e.g., specific Medical or Legal terminologies).

@@ -29,7 +29,8 @@ def test_image_only_pdf_error_message(tmp_path):
     doc.close()
     
     # 2. Run Streamlit AppTest
-    at = AppTest.from_file("../src/app.py")
+    app_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src", "app.py"))
+    at = AppTest.from_file(app_path)
     at.run()
     
     assert not at.exception, "App should load without exceptions"
